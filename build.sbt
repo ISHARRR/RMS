@@ -6,3 +6,12 @@ lazy val root = (project in file("."))
   .settings(
     name := "RMS"
   )
+
+libraryDependencies ++= Seq(
+  "com.typesafe.akka" %% "akka-http" % "10.5.0",
+  "com.typesafe.akka" %% "akka-http-spray-json" % "10.5.0",
+  "com.typesafe.akka" %% "akka-actor-typed" % "2.8.0",
+  "ch.qos.logback" % "logback-classic" % "1.4.6",
+  "com.typesafe.akka" %% "akka-slf4j" % "2.8.0",
+  "com.typesafe.akka" %% "akka-stream" % "2.8.0"
+)
